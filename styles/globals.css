@@ -1,5 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-card {
+    @apply bg-gray-200 w-[1250px] min-h-[800px] rounded-2xl shadow-xl;
+    @apply flex flex-col items-center py-4 px-8 border-2 border-gray-500;
+    /* box-shadow: 0 0 25px 0 rgba(0, 0, 0); */
+  }
+
+  .search-input {
+    @apply appearance-none bg-transparent border-b border-gray-400  grow;
+    @apply text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none h-10 text-xl;
+  }
+
+  .search-btn {
+    @apply bg-sky-600 hover:bg-sky-700 border-sky-600 hover:border-sky-700;
+    @apply text-lg border-4 text-white py-1 px-2 rounded;
+  }
+
+  .page-btn {
+    @apply border border-gray-500 w-6 h-6 bg-white rounded;
+  }
+}
+
 html,
 body {
+  background-color: rgb(2 132 199);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
